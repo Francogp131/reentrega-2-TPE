@@ -1,0 +1,45 @@
+<?php require 'templates/header.phtml' ?>
+
+<!-- formulario de actualizacion de cia -->
+<form action="actualizarCia" method="POST" class="my-4">
+
+        <div class="col-9">
+            <div class="form-group">
+                
+                <input required name="idCia" type="hidden"  class="form-control" value= "<?= $cia->id_Cia ?>">
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="form-group">
+                <label>Nombre Compañia</label>
+                <input required name="nombreCia" type="text" class="form-control" value= "<?= $cia->nombre_cia ?>">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Direccion:</label>
+                <input required name="direccion" type="text" class="form-control" value= "<?= $cia->direccion_cia ?>">
+            </div>
+        </div>
+    
+        <div class="col-9">
+            <div class="form-group">
+                <label>Contacto:</label>
+                <input required name="contacto" type="text" class="form-control" value= "<?= $cia->contacto ?>">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Email:</label>
+                <input required name="email" type="email" class="form-control" value= "<?= $cia->email ?>">
+            </div>
+        </div>
+
+
+    <button type="submit" class="btn btn-primary mt-2">Actualizar</button>
+</form>
+
+
+<?php require 'templates/footer.phtml' ?>

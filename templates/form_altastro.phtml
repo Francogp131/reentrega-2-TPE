@@ -1,0 +1,93 @@
+<form action="agregarstro" method="POST" class="my-4">
+        <div class="col-9">
+            <div class="form-group">
+                
+                <input required name="idstro" type="hidden" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Compañia:</label>
+                <select required name="nombre_cia" type="text" class="form-control">
+                    <?php foreach($cias as $cia):?>                
+                        <option value="<?=$cia->id_Cia?>"><?=$cia->nombre_cia?></option>
+                    <?php endforeach?>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Tipo de Siniestro:</label>
+                <input required name="tipo_stro" type="text" class="form-control">
+            </div>
+        </div>
+    
+        <div class="col-9">
+            <div class="form-group">
+                <label>Nombre del Asegurado:</label>
+                <input required name="nombre_asegurado" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Apellido del Asegurado:</label>
+                <input required name="apellido_asegurado" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Fecha:</label>
+                <input required name="fecha" type="date" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Direccion:</label>
+                <input required name="direccion" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Localidad:</label>
+                <input required name="localidad" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>Contacto:</label>
+                <input required name="contactoaseg" type="text"  class="form-control">
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>liquidador:</label>
+                <select required name="nombre_liqui" type="text" class="form-control">
+                    <?php foreach($liquis as $liqui):?>                
+                        <option value="<?=$liqui->id_liquidador?>"><?=$liqui->nombre?></option>
+                    <?php endforeach?>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="form-group">
+                <label>inspector:</label>
+                <select required name="nombre_insp" type="text" class="form-control">
+                    <?php foreach($insps as $insp):?>                
+                        <option value="<?=$insp->id_inspector?>"><?=$insp->nombre?></option>
+                    <?php endforeach?>
+                </select>
+            </div>
+        </div>
+
+
+    <button type="submit" class="btn btn-primary mt-2">Agregar</button>
+</form>

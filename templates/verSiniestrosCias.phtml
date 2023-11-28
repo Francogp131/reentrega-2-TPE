@@ -1,0 +1,27 @@
+<?php require 'templates/header.phtml' ?>
+
+
+<ul class="list-group">
+<?php foreach($stros as $stro): ?>
+    <li>
+        <div class="actions">>
+            <label>Tipo de Stro:</label>
+            <b><?= $stro->tipo_Stro ?></b>
+            <label>Apellido Asegurado:</label>
+            <b><?= $stro->apellido_Asegurado ?></b>
+            <label>Fecha de Stro:</label>
+            <b><?= $stro->fecha_Stro ?></b>
+            <label>Contacto:</label>
+            <b><?= $stro->contacto_Asegurado ?></b>
+        </div>
+    </li>
+<?php endforeach ?>
+</ul>
+
+           
+
+
+
+
+
+<?php require 'templates/footer.phtml' ?>

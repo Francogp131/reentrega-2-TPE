@@ -1,0 +1,28 @@
+<?php require 'templates/header.phtml' ?>
+
+
+<ul class="list-group">
+    <li>
+        <div class="actions">>
+            <label>id:</label>
+            <b><?= $cia->id_Cia ?></b>
+            <label>Nombre Compañia:</label>
+            <b><?= $cia->nombre_cia ?></b> 
+            <label>Direccion Compañia:</label>
+            <b><?= $cia->direccion_cia ?></b> 
+            <label>Contacto:</label>
+            <b><?= $cia->contacto ?></b>
+            <label>Email:</label>
+            <b><?= $cia->email ?></b> 
+            
+            
+                <a href="listar/" type="button" class='btn btn-success ml-auto'>Volver</a> 
+            
+            
+        </div>
+    </li>
+
+</ul>
+
+
+<?php require 'templates/footer.phtml' ?>

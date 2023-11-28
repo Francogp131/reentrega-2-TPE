@@ -1,0 +1,25 @@
+<?php require 'templates/header.phtml' ?>
+<form action="mostrarstros" method="POST" class="my-4">
+    <ul class="list-group">
+        <li>
+            <div class="actions">
+                <label>Seleccionar Compañia:</label>
+                    <select required name="nombre_cia" type="text" class="form-control">
+                    <?php foreach($cias as $cia):?>                
+                        <option value="<?=$cia->id_Cia?>"><?=$cia->nombre_cia?></option>
+                
+                    <?php endforeach?>
+                    </select>
+
+                   
+            
+                
+            
+            </div>
+        </li>
+
+    </ul>
+    <button type="submit" class="btn btn-primary mt-2">mostrar sinietro</button>
+</form>
+
+<?php require 'templates/footer.phtml' ?>
